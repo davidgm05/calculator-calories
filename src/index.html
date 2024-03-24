@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Calorías</title>
+  <link rel="stylesheet" href="scss/style.scss">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Calorías</h1>
+    <label for="weight">Peso (kg):</label>
+    <input type="number" id="weight">
+    <label for="height">Altura (cm):</label>
+    <input type="number" id="height">
+    <label for="age">Edad:</label>
+    <input type="number" id="age">
+    <label for="gender">Género:</label>
+    <select id="gender">
+      <option value="male">Masculino</option>
+      <option value="female">Femenino</option>
+    </select>
+    <label for="activity-level">Nivel de actividad:</label>
+    <select id="activity-level">
+      <option value="sedentary">Sedentario</option>
+      <option value="lightly-active">Poco activo</option>
+      <option value="moderately-active">Moderadamente activo</option>
+      <option value="active">Activo</option>
+      <option value="very-active">Muy activo</option>
+    </select>
+    <button onclick="calculateCalories()">Calcular Calorías</button>
+    <div id="result"></div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
